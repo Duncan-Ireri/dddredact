@@ -1,0 +1,18 @@
+Invoice No >>> REF98765
+
+Date >>> 06/03/2021
+
+SUB TOTAL >>> 16500
+
+TAX RATE >>> 16%
+
+TAX >>> 2640
+
+TOTAL >>> 19140
+
+Description >>> This bill is in arrears.
+
+isp_bill >>> [{'Description': 'Lite Speed', 'Speed': '5 Mb/s', 'Amount': 2500}, {'Description': 'Bronze Speed', 'Speed': '10 Mb/s', 'Amount': 5000}, {'Description': 'Platinum Speed', 'Speed': '15 Mb/s', 'Amount': 9000}]
+
+date_add >>> 2021-03-09 16:14:21.486661
+

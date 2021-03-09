@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+
+{% block title %}
+    DIRECTORY TREE
+{% endblock title %}
+
+{% include '_nav.html' %}
+
+{% block content %}
+<ul>
+    {% for file in files %}
+    <li>
+        <a href="{{ (request.path + '/' if request.path != '/' else '') + file }}">
+            {{ (request.path + '/' if request.path != '/' else '') + file }}
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock content %}
+    

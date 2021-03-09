@@ -1,0 +1,49 @@
+{% extends 'layout.html' %}
+
+
+{% block title %}
+    :: UPLOAD
+{% endblock title %}
+
+{% include '_nav.html' %}
+
+
+{% block content %}
+
+<div class="jumbotron">
+  <h1 class="display-4">PDF REDACT</h1>
+  <p class="lead">This Demo is just an oversimplification of the intended use case</p>
+  <hr class="my-4">
+  <p>Find the link to the invoice/bill/survey here, you can alter the table fields and change the data. <a href="https://docs.google.com/document/d/1OO4_-mtlKRxJnnZJfKVmezVgQwPMdd10LwMv-gNc6ug/edit">DDD INVOICE</a> </p>
+  <p>Note this particular demo takes only one PDF at a time.</p>
+  <a class="btn btn-primary btn-lg" href="#" role="button">Detailed Approach</a>
+</div>
+
+  <div class="container">
+    <div class="row">
+      <p>
+        {% with messages = get_flashed_messages() %}
+          {% if messages %}
+          <ul class=flashes>
+          {% for message in messages %}
+            <li>{{ message }}</li>
+          {% endfor %}
+          </ul>
+          {% endif %}
+        {% endwith %}
+      </p>
+      <form method="post" action="/" enctype="multipart/form-data">
+          <dl>
+          <p>
+            <input type="file" name="file" autocomplete="off" required>
+          </p>
+          </dl>
+          <p>
+          <input type="submit" value="Submit">
+        </p>
+      </form>
+    </div>
+  </div>
+
+{% endblock content %}
+    
