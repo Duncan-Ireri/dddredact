@@ -40,12 +40,12 @@ lxml==4.6.2
 MarkupSafe==1.1.1
 marshmallow==3.10.0
 marshmallow-sqlalchemy==0.24.2
-matplotlib==3.3.4
-numpy==1.20.1
+matplotlib
+numpy
 olefile==0.46
 opencv-python==4.5.1.48
 openpyxl==3.0.6
-pandas==1.2.3
+pandas
 parso==0.8.1
 pdfkit==0.6.1
 pdfminer.six==20181108
@@ -53,7 +53,7 @@ pdfquery==0.4.3
 pdfrw==0.4
 pexpect==4.8.0
 pickleshare==0.7.5
-Pillow==8.1.2
+Pillow
 prompt-toolkit==3.0.16
 ptyprocess==0.7.0
 pycparser==2.20
